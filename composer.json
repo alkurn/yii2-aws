@@ -1,0 +1,27 @@
+{
+    "name": "alkurn/yii2-aws",
+    "description": "This extension provides the AWS SDK integration for the Yii2 framework",
+    "type": "yii2-extension",
+    "minimum-stability": "stable",
+    "keywords": ["yii2","extension","aws","amazon","sdk","s3","ec2","dynamodb","cloud","glacier"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/alkurn/yii2-aws/issues?state=open",
+        "source": "https://github.com/alkurn/yii2-aws"
+    },
+    "authors": [
+        {
+            "name": "Ganesh Alkurn",
+            "email": "mganesh.alkurn@gmail.com"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "3.*",
+        "yiisoft/yii2": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "alkurn\\aws\\": ""
+        }
+    }
+}
