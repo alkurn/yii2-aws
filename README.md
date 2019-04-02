@@ -12,19 +12,19 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist alkurn/yii2-aws "*"
+php composer.phar require --prefer-dist alkurn/yii2-aws "dev-master"
 ```
 
 or add
 
 ```
-"alkurn/yii2-aws": "*"
+"alkurn/yii2-aws": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
 
 ```
-Note: You can still use AWS version 2 if you specify alkurn/yii2-aws "1.*"
+Note: You can still use AWS version 2 if you specify alkurn/yii2-aws "dev-master"
 ```
 
 Usage
