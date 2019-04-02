@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/mit-license.php The MIT License (MIT)
  * @package yii2-aws
  */
-namespace aws\S3;
+namespace alkurn\aws;
 
 use yii\base\Component;
 use Aws;
@@ -65,7 +65,8 @@ class S3 extends Component
         $this->_s3 = new Aws\Sdk(array_merge([
                                         'credentials' => $this->credentials,
                                         'region' => $this->region,
-                                        'version' => $this->version
+                                        'version' => $this->version,
+                                        'bucket' => $this->bucket
                                     ],$this->extra));
     }
 }
