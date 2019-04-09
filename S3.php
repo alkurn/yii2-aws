@@ -95,8 +95,8 @@ class S3 extends Component
             return $result;
 
         } catch (Aws\S3\Exception\S3Exception $e) {
-            echo "There was an error uploading the file.\n";
-            exit;
+            //echo "There was an error uploading the file.\n";
+            return false;
         }
     }
 
