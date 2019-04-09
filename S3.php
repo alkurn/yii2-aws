@@ -22,12 +22,12 @@ class S3 extends Component
      * @var array specifies the AWS credentials
      */
     public $credentials = [];
-    
+
     /*
      * @var string specifies the AWS region
      */
     public $region = null;
-    
+
     /*
      * @var string specifies the AWS version
      */
@@ -77,7 +77,7 @@ class S3 extends Component
     {
         $aws =  $this->getS3()->createS3();
         $isExist = $aws->doesObjectExist($this->bucket, $keyName);
-        return $isExist;
+        return $isExist; 
     }
 
     public function putObject($keyName, $filePath, $ACL = 'public-read')
@@ -95,8 +95,8 @@ class S3 extends Component
             return $result;
 
         } catch (Aws\S3\Exception\S3Exception $e) {
-            echo "There was an error uploading the file.\n";
-            exit;
+            //echo "There was an error uploading the file.\n";
+            return false;
         }
     }
 
